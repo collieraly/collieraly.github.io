@@ -3,14 +3,14 @@
     padding: 0px; 
 }
 nav {
-    background-color: #727274;
+    background-color: #727274; 
     position: sticky;
     top: 0px; 
 }
 
 nav ul {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.25em;  
+    font-size: 1em;  
     text-align: right;
     }
 
@@ -21,12 +21,12 @@ nav ul li {
     }
 nav ul li a {
     display: inline-block;
-    padding: 15px 12px 15px 12px;
-    width: 90px;
+    margin: 0px 3px; 
+    padding: 5px 12px 15px 12px;
     background-color: #727274;
     color: #ffffff;
     text-decoration: none;
-    text-align: center;
+    text-align: right;
     font-variant: small-caps;
     }
 
@@ -48,5 +48,6 @@ nav ul li:hover ul {
 nav ul li ul li a {
     padding: 0 0 0 0;
     width: 125px;
+    text-align: center; 
 }
 

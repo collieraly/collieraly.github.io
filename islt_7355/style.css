@@ -8,8 +8,8 @@ header {
 }
 
 nav {
-    grid-area: nav;
-    align-content: center;
+    grid-area: nav; 
+
 }
 main {
     grid-area: main; 
@@ -21,9 +21,9 @@ footer {
 
 body {
     display: grid;
-    grid-template-rows: 100px 1fr 50px;
-    grid-template-columns: 50px 50% 1fr; 
-    grid-gap: 10px 0px; 
+    grid-template-rows: 65px 1fr 50px;
+    grid-template-columns: 25% 20% 1fr;
+    grid-gap: 10px 0px;
     grid-template-areas:  
     'header header nav'
     'main main main'
@@ -41,6 +41,7 @@ body {
     top: 0; 
     left: 0; 
     z-index: 100;
+    margin: 0; 
 }
 
 #logo {
@@ -60,7 +61,8 @@ h1 {
 }
 
 nav {
-    height: 60px;
+    background-color: #727274;
+    height: 60px; 
     padding-top: 15px; 
     padding-right: 20px; 
 }
@@ -81,8 +83,7 @@ h2 {
 h3 {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.25em;
-    font-weight: normal;
-    font-style: bold;
+    font-weight: bold;
     font-variant: normal; 
     color: #727274 
 }
@@ -100,6 +101,14 @@ div {
     background-color: #ffffff;
     margin: 0px 200px;
     padding: 25px; 
+}
+
+#headshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 8px;
+    max-width: 25%; 
 }
 #firstparagraph::first-letter {
     font-family: Helvetica, Arial, sans-serif;
@@ -152,48 +161,138 @@ footer {
     font-weight: normal; 
     font-style: normal; 
     color:#ffffff;
-    padding: 15px;  
+    padding: 15px 0px 15px 0px; 
 }
 
+#footer {
+    text-align:left; 
+    color:#ffffff;
+    line-height: .75em;
+    margin-bottom: -25px;
+}
+#copy {
+    text-align: right; 
+    color:#ffffff;
+    margin-bottom: 0px; 
+    padding: 0px 25px;  
+}
+
+
+
 /*media queries and responsive design*/
+/*mobile*/
+@media only screen and (max-width: 640px) /*mobile*/ {
 
-@media only screen and (max-width: 640px) {
+/* mobile nav menu */
+    
+#menu-icon {
+    display: block;
+    float: right;
+    padding-right: 20px;        
+    width: 32px; 
+    line-height: 60px;      
+    font-size: 3em;
+    color:#ffffff;
+}
+#menu-icon:hover {
+    color: #ebd600;
+}
 
-    #menu-icon {
-        display: block;
-        float: right;  
-        padding-right: 20px;        
-        width: 32px; 
-        line-height: 60px;      
-        font-size: 3em;
-        color:#ffffff;
-    }
-
-    #menu-icon:hover {
-        color: #ebd600;
-    }
     nav:hover ul {
-       display: block; 
+    display: block; 
+    width: 125px; 
+    text-align: center; 
+
     }
     nav ul {
+        background-color: #727274;
         display: none; 
         position: absolute; 
-    } 
+        text-align: center; 
+    }
+
+    nav ul li {
+        text-align: center; 
+    }
+
+    nav ul li ul li {
+        display: none; 
+    }
+
+
     /* mobile grid styling */
     body {
         display: grid;
-        grid-template-rows: 100px 1fr 50px;
-        grid-template-columns: 1fr; 
-        grid-gap: 10px 0px;  
-        background-image: none;
+        grid-template-rows: 75px 1fr 50px;
+        grid-template-columns: 75% 25%; 
+        grid-gap: 0px 0px;  
+        grid-template-areas:  
+        'header nav'
+        'main main'
+        'footer footer'; 
+    }
+
+    h1 {
+        font-size: 1.55em;
+        padding-top: 8px; 
     }
 
     div {
         background-color: #ffffff;
-        margin: 0px;
-        padding: 25px;
+        margin: 0px 25px;
+        padding: 20px 25px;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width:1200px) /*tablet*/ {
+
+    h1 {
+        font-size: 1.55em;
+        padding-top: 8px; 
+    }
+    header { 
+        position: static; 
+        left: 0; 
+        z-index: 100;
+        margin: 0; 
+    }
+    div {
+        background-color: #ffffff;
+        margin: 0px 85px;
+        padding: 25px 25px;
+    }
+    nav {
+        height: 38px; 
+        position: sticky;
+        top: 0px; 
+        margin: 0px; 
+    }
+    nav ul {
+        display: block; 
+        position: absolute; 
+        font-size: 1em; 
+
     }
 
+    nav ul li {
+        text-align: center; 
+    }
 
+    nav ul li ul li {
+        display: none; 
+    }
+    body {
+        display: grid;
+        grid-template-rows: 70px 50px 1fr 50px;
+        grid-template-columns: 100%; 
+        grid-gap: 0px 0px;  
+        grid-template-areas:  
+        'header'
+        'nav'
+        'main'
+        'footer';
+    }
 
+    
+}
 
