@@ -192,18 +192,26 @@ footer {
 
 }
 
-
-
 #email {
     height: 24px;
     width: 24px;
     padding-top: 8px; 
+    transition: 0.5s linear; 
+}
+
+#email:hover {
+    transform: scale(1.25);
 }
 
 #phone {
     height: 24px;
     width: 24px;
     padding-top: 8px; 
+    transition: 0.5s linear; 
+}
+
+#phone:hover {
+    transform: scale(1.25);
 }
 
 /*media queries and responsive design*/
