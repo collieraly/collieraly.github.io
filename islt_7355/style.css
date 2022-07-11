@@ -105,7 +105,7 @@ h4 {
 div {
     background-color: #ffffff;
     margin: 0px 200px;
-    padding: 25px; 
+    padding: 25px 40px; 
 }
 
 #headshot {
@@ -156,6 +156,10 @@ p {
         text-indent: 5px; 
         margin: 10px; 
     }
+
+#video {
+    text-align: center; 
+}
 
 blockquote {
     font-family: Helvetica, Arial, sans-serif;
