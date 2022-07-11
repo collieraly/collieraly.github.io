@@ -6,6 +6,7 @@ nav {
     background-color: #727274; 
     position: sticky;
     top: 0px; 
+    z-index: 100;
 }
 
 nav ul {
@@ -38,6 +39,8 @@ nav ul li ul {
     display: none;
     position: absolute; 
     background-color: #727274;
+    font-size: .75em;
+    line-height: 25px; 
 }
 
 nav ul li:hover ul {

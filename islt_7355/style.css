@@ -90,7 +90,8 @@ h3 {
     font-size: 1.25em;
     font-weight: bold;
     font-variant: normal; 
-    color: #727274 
+    color: #4501A0;
+    padding: 15px 0px 5px 0px; 
 }
 
 h4 {
@@ -99,7 +100,8 @@ h4 {
     font-weight: normal;
     font-style: italic;
     font-variant: normal; 
-    color: #727274
+    color: #727274;
+    padding-bottom: 8px; 
 }
     
 div {
@@ -192,9 +194,89 @@ blockquote {
     color: #4501A0;
 }
 
-button {
+/* Project Specific Items */
+#Missouri, 
+#ZIEL, 
+#Career, 
+#Pharmacy {
+    background-color: #ffffff;
+    margin: 25px; 
+    padding: 0px;  
+    scroll-margin-top: 75px; 
 
 }
+.assignments, 
+.quizzes, 
+.internship, 
+.careerguide, 
+.EA, 
+.postcard {
+    font-family: Helvetica, Arial, sans-serif;
+    display: inline-block; 
+    border: none; 
+    border-radius: 50%; 
+    height: 100px; 
+    width: 180px; 
+    background-color: #727274;
+    color: #ffffff; 
+    padding: 0px; 
+    text-align: center; 
+    text-decoration: none; 
+    font-size: 1.15em; 
+    margin: 10px 30px; 
+    padding: 80px 5px 10px 5px;  
+    z-index: 70; 
+    transition: 0.75s linear; 
+}
+
+.assignments a, 
+.quizzes a, 
+.internship a, 
+.careerguide a, 
+.EA a, 
+.postcard a {
+    color: #ffffff;
+    text-decoration: none; 
+    padding-top: 50px; 
+}
+
+a:hover {
+    background-color:#000066; 
+    cursor: pointer; 
+}
+
+#manikin {
+    display: inline-block; 
+    border: none; 
+    border-radius: 50%;
+    height: 180px; 
+    width: 180px; 
+    margin: 10px 30px; 
+    border: 5px solid #4501A0;
+    transition: 1s linear; 
+}
+
+#manikin:hover {
+    height: 360px;
+    width: 360px; 
+}
+
+#wounds {
+    display: inline-block; 
+    border: none; 
+    border-radius: 50%;
+    height: 180px; 
+    width: 180px; 
+    margin: 10px 30px; 
+    border: 5px solid #4501A0;
+    transition: 1s linear;
+}
+
+#wounds:hover {
+    height: 360px;
+    width: 360px; 
+}
+
 
 footer { 
     width: 100%; 
@@ -207,7 +289,6 @@ footer {
     text-align: center; 
     line-height: 20px; 
     background-image: url("images/footer2.png");
-
 }
 
 #email {
@@ -365,7 +446,8 @@ footer {
     #logo,
     #headshot,
     #email,
-    #phone {
+    #phone, 
+    #video {
         display: none;
     }
 
