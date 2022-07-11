@@ -346,8 +346,7 @@ footer {
     h2, 
     p, 
     blockquote, 
-    #attribution,
-    #footer {
+    #attribution {
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
     
@@ -383,6 +382,7 @@ footer {
     footer {
         font-size: 11pt; 
         font-weight: normal; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
 
     }
     @page {
