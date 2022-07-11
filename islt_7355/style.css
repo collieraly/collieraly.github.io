@@ -1,4 +1,9 @@
 
+@font-face { 
+    font-family: AlexBrush; 
+    src: url("AlexBrush-Regular.ttf"); 
+    }
+
 html, body {
     width: 100%; 
     height: 100%
@@ -49,13 +54,13 @@ body {
     margin: 12px; 
 }
 h1 {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 2em;
+    font-family: AlexBrush, cursive; 
+    font-size: 2.5em;
     font-weight: bold;
     font-style: normal;
-    font-variant: small-caps;
     color: #4501A0;
     margin: 15px;
+    padding-top: 3px; 
     position: absolute; 
     left: 55px; 
 }
@@ -132,6 +137,26 @@ p {
     margin-bottom: 8px;
 }
 
+#education {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    font-style: normal;   
+    color:#000066;
+    text-indent: 15px;
+    line-height: 1.75;
+    margin-bottom: 3px;
+    padding: 5px;
+}
+    #education li {
+        list-style-type: circle; 
+        list-style-position: inside; 
+        font-weight:normal; 
+        padding: 0px 20px; 
+        text-indent: 5px; 
+        margin: 10px; 
+    }
+
 blockquote {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.5em;
@@ -154,30 +179,32 @@ blockquote {
 }
 
 footer { 
-    background-color: #000066;
     width: 100%; 
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.25em;
-    font-weight: normal; 
+    font-size: 1em;
+    font-weight: bold; 
     font-style: normal; 
     color:#ffffff;
-    padding: 15px 0px 15px 0px; 
-}
+    padding: 0px 0px 15px 0px; 
+    text-align: center; 
+    line-height: 20px; 
+    background-image: url("images/footer2.png");
 
-#footer {
-    text-align:left; 
-    color:#ffffff;
-    line-height: .75em;
-    margin-bottom: -25px;
-}
-#copy {
-    text-align: right; 
-    color:#ffffff;
-    margin-bottom: 0px; 
-    padding: 0px 25px;  
 }
 
 
+
+#email {
+    height: 24px;
+    width: 24px;
+    padding-top: 8px; 
+}
+
+#phone {
+    height: 24px;
+    width: 24px;
+    padding-top: 8px; 
+}
 
 /*media queries and responsive design*/
 /*mobile*/
@@ -218,6 +245,9 @@ footer {
     nav ul li ul li {
         display: none; 
     }
+    footer {
+        font-size: .75em; 
+    }
 
 
     /* mobile grid styling */
@@ -233,7 +263,7 @@ footer {
     }
 
     h1 {
-        font-size: 1.55em;
+        font-size: 2em;
         padding-top: 8px; 
     }
 
@@ -247,7 +277,7 @@ footer {
 @media only screen and (min-width: 641px) and (max-width:1200px) /*tablet*/ {
 
     h1 {
-        font-size: 1.55em;
+        font-size: 2em;
         padding-top: 8px; 
     }
     header { 
@@ -293,6 +323,73 @@ footer {
         'footer';
     }
 
-    
 }
+    /* print setup */
+
+@media print {
+    * {
+        background: transparent !important; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #000000 !important;
+        box-shadow: none !important; 
+        text-shadow: none !important; 
+    }
+
+    nav, 
+    #logo,
+    #headshot,
+    #email,
+    #phone {
+        display: none;
+    }
+
+    h2, 
+    p, 
+    blockquote, 
+    #attribution,
+    #footer {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    header {
+        padding: 0px; 
+        margin: 0px; 
+        height: 40px;}
+
+        h1 {
+        font-size: 1.5em; 
+        margin: 0px; 
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    div {
+        margin: 0px; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 11pt; 
+    }
+
+    blockquote {
+        font-size: 11pt; 
+        margin-bottom: 5px; 
+    }
+
+    #attribution {
+        margin-bottom: 0px; 
+    }
+
+    footer {
+        font-size: 11pt; 
+        font-weight: normal; 
+
+    }
+    @page {
+        margin: 1in; 
+    }
+
+}
+    
+
 
