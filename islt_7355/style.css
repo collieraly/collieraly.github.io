@@ -572,7 +572,8 @@ footer {
     #headshot,
     #email,
     #phone, 
-    #video {
+    #video, 
+    table {
         display: none;
     }
 
