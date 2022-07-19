@@ -315,6 +315,49 @@ a:hover {
 }
 
 
+label {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+    font-weight: normal;
+    font-style: normal;   
+    color:#000066;
+    width: 50%; 
+    display: block; 
+    margin: 15px 0px 2px 0px; 
+}
+
+#firstname, #lastname, #emailadd {
+    padding: 3px 8px; 
+    margin-bottom: .5em; 
+    width: 50%; 
+    height: 30px; 
+}
+
+textarea {
+    width: 50%; 
+    height: 200px; 
+    padding: 3px 8px; 
+}
+
+
+#submit {
+    display: block; 
+    margin: 5px 0px; 
+    color: #ffffff; 
+    background-color: #4501A0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight:bold; 
+    padding: 8px; 
+    border: none; 
+    border-radius: 8px; 
+}
+
+#submit:hover {
+    cursor: pointer; 
+}
+
+
 footer { 
     width: 100%; 
     font-family: Helvetica, Arial, sans-serif;
@@ -361,7 +404,7 @@ footer {
     float: right;
     padding-right: 20px;        
     width: 32px; 
-    line-height: 60px;      
+    line-height: 20px;      
     font-size: 3em;
     color:#ffffff;
 }
@@ -397,6 +440,19 @@ footer {
 
     th, td {
         padding: 8px 2px; 
+    }
+/* responsive form styling */
+    label {
+        width: 90%; 
+        font-weight: bold; 
+    }
+    
+    #firstname, #lastname, #emailadd {
+        width: 90%; 
+    }
+    
+    textarea {
+        width: 90%;  
     }
 
     footer {
@@ -485,6 +541,18 @@ footer {
         font-family: Helvetica, Arial, sans-serif;
         font-size: .9em; 
         margin: 5px 0px 30px 0px; 
+    }
+
+    label {
+        width: 75%; 
+    }
+    
+    #firstname, #lastname, #emailadd {
+        width: 75%; 
+    }
+    
+    textarea {
+        width: 75%;  
     }
 
 }

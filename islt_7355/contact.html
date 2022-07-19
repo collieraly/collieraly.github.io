@@ -2,17 +2,21 @@
 <html lang="en-US">
 <head>
         <meta charset="utf-8">
-        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+        <title>Contact Alyssa</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
          <!--
                 
             *****************************************************************************
                 
-            Title:  
-            Use:   
+            Title: Contact 
+            Use:  Contact form to email Alyssa
             Author:  Alyssa Collier
             School/Term:  University of Missouri, Summer 2022
-            Developed: June XX, 2022
-            Tested:  June XX; Passed on Firefox and Chrome browsers.
+            Developed: July 19, 2022
+            Tested:  July 19; Passed on Firefox and Chrome browsers.
                 
             ******************************************************************************
                 
@@ -37,14 +41,24 @@
                 <li><a href="project.html#Pharmacy">School of Pharmacy</a></li> 
             </ul></li>
         <li><a href="reflection.html">Reflection</a></li>  
-        <li><a href="#">Contact</a></li> 
+        <li><a href="contact.html">Contact</a></li> 
     </ul>
     </nav>
     <main>
         <div>
-            <h2></h2>
-            <p>
-            </p>
+            <h2>Contact Me</h2>
+        <form action="mailto:collieraly@umsystem.edu?Subject=Professional%20Website%20Contact" method="post" enctype="text/plain">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" autofocus required>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <label for="emailadd">Email Address:</label>
+            <input type="email" id="emailadd" name="emailadd" required>
+            <label for="message">Message:</label>
+            <textarea name="message" required></textarea>
+            <input type="submit"  id="submit" value="Submit">
+
+        </form>
             </div>
     </main>  
         <footer>
