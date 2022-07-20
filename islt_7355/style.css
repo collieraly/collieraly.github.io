@@ -53,12 +53,13 @@ body {
    float: left;  
     margin: 12px; 
 }
+
 h1 {
     font-family: AlexBrush, cursive; 
     font-size: 2.5em;
     font-weight: bold;
     font-style: normal;
-    color: #4501A0;
+    color: #ffffff;
     margin: 15px;
     padding-top: 3px; 
     position: absolute; 
@@ -82,7 +83,7 @@ h2 {
     font-weight: bold;
     font-style: normal;
     font-variant: normal; 
-    color: #000066;  
+    color: #4501A0;  
     margin-bottom: 10px;  
 }
 h3 {
@@ -90,7 +91,7 @@ h3 {
     font-size: 1.25em;
     font-weight: bold;
     font-variant: normal; 
-    color: #4501A0;
+    color: #000066;
     padding: 15px 0px 5px 0px; 
 }
 
@@ -109,6 +110,26 @@ div {
     margin: 0px 200px;
     padding: 25px 40px; 
 }
+
+#lecture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 8px;
+    max-width: 37.5%; 
+}
+
+figcaption {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: .75em;
+    font-weight: normal;
+    font-style: normal;   
+    color:#727274;
+    text-indent: 15px;
+    line-height: .9em;
+    padding: 0px 5px 5px 5px;
+    text-align: center; 
+}   
 
 #headshot {
     display: block;
@@ -133,6 +154,10 @@ p {
     margin-bottom: 8px;
 }
 
+a {
+    color: #4501A0;   
+}
+
 #education {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1em;
@@ -154,7 +179,7 @@ p {
     }
 
 
-figcaption {
+#tablename {
         font-family: Helvetica, Arial, sans-serif;
         font-size: 1em;
         font-weight: bold;
@@ -216,7 +241,7 @@ blockquote {
     color: #4501A0;
     margin-bottom: 2px; 
     margin-top: 25px; 
-    line-height: 1em; 
+    line-height: 1.5em; 
 }
 
 #attribution {
@@ -227,7 +252,7 @@ blockquote {
     font-variant: normal;
     text-indent: 50px; 
     margin: 0px; 
-    line-height: .75em;
+    line-height: 1em;
     color: #4501A0;
 }
 
@@ -248,22 +273,21 @@ blockquote {
 .careerguide, 
 .EA, 
 .postcard {
-    font-family: Helvetica, Arial, sans-serif;
     display: inline-block; 
     border: none; 
-    border-radius: 50%; 
-    height: 100px; 
+    border-radius: 50%;
+    height: 180px; 
     width: 180px; 
-    background-color: #727274;
-    color: #ffffff; 
-    padding: 0px; 
-    text-align: center; 
-    text-decoration: none; 
-    font-size: 1.15em; 
     margin: 10px 30px; 
-    padding: 80px 5px 10px 5px;  
-    z-index: 70; 
-    transition: 0.75s linear; 
+    border: 5px solid #4501A0;
+    transition: 1s linear; 
+}
+
+#CAtitle, #CQtitle, #Toolkittitle, #CDGtitle, #EAtitle, #postcardtitle {
+    font-family: Helvetica, Arial, sans-serif;;
+    font-weight: bold; 
+    color: #727274;
+    padding: 0px 0px 0px 25px; 
 }
 
 .assignments a, 
@@ -278,7 +302,6 @@ blockquote {
 }
 
 a:hover {
-    background-color:#000066; 
     cursor: pointer; 
 }
 
@@ -298,6 +321,11 @@ a:hover {
     width: 360px; 
 }
 
+#manikincaption, #woundscaption {
+    text-align: left; 
+    padding:  0px 5px 0px 25px; 
+}
+
 #wounds {
     display: inline-block; 
     border: none; 
@@ -314,6 +342,11 @@ a:hover {
     width: 360px; 
 }
 
+#woundscaption {
+    text-align: left; 
+    padding:  0px 5px 0px 25px; 
+    margin-bottom: 15px; 
+}
 
 label {
     font-family: Helvetica, Arial, sans-serif;
@@ -365,16 +398,16 @@ footer {
     font-weight: bold; 
     font-style: normal; 
     color:#ffffff;
+    background-color: #727274;
     padding: 0px 0px 15px 0px; 
     text-align: center; 
     line-height: 20px; 
-    background-image: url("images/footer2.png");
 }
 
 #email {
     height: 24px;
     width: 24px;
-    padding-top: 8px; 
+    padding: 8px 5px 0px 5px; 
     transition: 0.5s linear; 
 }
 
@@ -385,7 +418,7 @@ footer {
 #phone {
     height: 24px;
     width: 24px;
-    padding-top: 8px; 
+    padding: 8px 5px 0px 5px; 
     transition: 0.5s linear; 
 }
 
@@ -432,7 +465,9 @@ footer {
     nav ul li ul li {
         display: none; 
     }
-
+    #lecture {
+        max-width: 50%; 
+    }
     table {
         width: 100%; 
         font-size: .75em;  
@@ -532,7 +567,9 @@ footer {
         'main'
         'footer';
     }
-
+    #lecture {
+        max-width: 50%; 
+    }
     table {
         border: 4px solid #727274; 
         border-collapse: collapse; 
@@ -573,7 +610,9 @@ footer {
     #email,
     #phone, 
     #video, 
-    table {
+    table, 
+    #tablename,
+    figcaption {
         display: none;
     }
 
