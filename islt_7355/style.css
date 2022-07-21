@@ -26,7 +26,7 @@ footer {
 
 body {
     display: grid;
-    grid-template-rows: 65px 1fr 50px;
+    grid-template-rows: 65px 1fr 68px;
     grid-template-columns: 25% 20% 1fr;
     grid-gap: 10px 0px;
     grid-template-areas:  
@@ -124,7 +124,7 @@ figcaption {
     font-size: .75em;
     font-weight: normal;
     font-style: normal;   
-    color:#727274;
+    color:#000066;
     text-indent: 15px;
     line-height: .9em;
     padding: 0px 5px 5px 5px;
@@ -185,9 +185,10 @@ a {
         font-weight: bold;
         font-style: normal;   
         color:#000066;
-        text-indent: 15px;
+        text-align: left; 
         line-height: 1.75;
         padding: 5px;
+
     }   
     
 table {
@@ -195,8 +196,10 @@ table {
     border-collapse: collapse; 
     color: #000066;
     width: 85%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 10px; 
     font-family: Helvetica, Arial, sans-serif;
-    margin: 5px 0px 30px 0px; 
 }
 
 thead, 
@@ -226,9 +229,10 @@ tbody tr:nth-child(odd) {
 #video iframe{
     position: absolute;
     top:0;
-    left: 0;
-    width: 65%;
+    width: 80%;
     height: 100%;
+    margin-left: auto;
+    margin-right: auto; 
     margin-bottom: 20px; 
   }
 
@@ -242,6 +246,7 @@ blockquote {
     margin-bottom: 2px; 
     margin-top: 25px; 
     line-height: 1.5em; 
+    text-align: center; 
 }
 
 #attribution {
@@ -250,7 +255,7 @@ blockquote {
     font-weight: normal; 
     font-style: italic;
     font-variant: normal;
-    text-indent: 50px; 
+    text-align: center; 
     margin: 0px; 
     line-height: 1em;
     color: #4501A0;
@@ -286,7 +291,7 @@ blockquote {
 #CAtitle, #CQtitle, #Toolkittitle, #CDGtitle, #EAtitle, #postcardtitle {
     font-family: Helvetica, Arial, sans-serif;;
     font-weight: bold; 
-    color: #727274;
+    color: #4501A0;
     padding: 0px 0px 0px 25px; 
 }
 
@@ -415,6 +420,10 @@ footer {
     transform: scale(1.25);
 }
 
+#emailfoot {
+    color: #000066; 
+}
+
 #phone {
     height: 24px;
     width: 24px;
@@ -425,6 +434,7 @@ footer {
 #phone:hover {
     transform: scale(1.25);
 }
+
 
 /*media queries and responsive design*/
 /*mobile*/
@@ -470,7 +480,7 @@ footer {
     }
     table {
         width: 100%; 
-        font-size: .75em;  
+        font-size: .75em; 
     }
 
     th, td {
